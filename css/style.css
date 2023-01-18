@@ -109,6 +109,16 @@ main section article .txt h2::before {
   top: -10px;
   transition: width 1s 0.5s;
 }
+main section article .txt .desc {
+  width: 60%;
+  position: absolute;
+  top: 60%;
+  left: 5vw;
+  opacity: 0;
+  transition: 0.5s 0s;
+  font: 16px/1.3 "arial";
+  color: #888;
+}
 main section article .pic {
   width: 100%;
   height: 60%;
@@ -153,6 +163,15 @@ main section article .open i {
   color: #555;
   transition: 0.5s 0s;
 }
+main section article .close {
+  cursor: pointer;
+  position: absolute;
+  top: 10vh;
+  right: -10vw;
+  opacity: 0;
+  color: #ddd;
+  transition: 0.5s 0s;
+}
 main section article:nth-of-type(1) {
   transform: translateX(-400%) translateY(70%) scale(0.6);
   opacity: 0;
@@ -191,6 +210,56 @@ main section article:nth-of-type(4) {
 main section article:nth-of-type(5) {
   transform: translateX(400%) translateY(-70%) scale(0.6);
   opacity: 0;
+}
+main section article.on {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition-duration: 0.8s;
+  transition-delay: 0.5s;
+}
+main section article.on .txt {
+  width: 60%;
+  height: 100%;
+  padding: 5vw;
+  transition: 0.5s 0.5s;
+}
+main section article.on .txt h2 {
+  bottom: calc(100% - 5vw - 200px);
+  left: 5vw;
+  transition: 0.5s 0s;
+}
+main section article.on .txt .desc {
+  opacity: 1;
+  top: 50%;
+  transition: 1s 1s;
+}
+main section article.on .pic {
+  width: 40%;
+  height: 100%;
+  transition: 0.5s 0.5s;
+}
+main section article.on .open {
+  width: 0%;
+}
+main section article.on .open span {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+main section article.on .close {
+  top: 10vh;
+  right: 10vw;
+  opacity: 1;
+  transition: 0.5s 1s;
+}
+main section article.hide {
+  opacity: 0;
+  margin-top: -1000px;
+  transition-delay: 0s;
 }
 main nav {
   position: absolute;
