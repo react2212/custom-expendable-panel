@@ -358,4 +358,41 @@ main nav p:hover.next::after, main nav p:hover.prev::after {
   transition: 0.2s 0.2s;
 }
 
+@media screen and (max-width: 969px) {
+  main header #gnb {
+    display: none;
+  }
+  main header .fa-bars-staggered {
+    display: block;
+  }
+  main section article {
+    width: 70vw;
+    height: 60vh;
+    margin-left: -35vw;
+    margin-top: -30vh;
+  }
+  main section article .txt h2 {
+    font-size: 17vw;
+    bottom: -7vw;
+  }
+  main section article .txt i {
+    top: 30px;
+    right: 20px;
+  }
+  main section article .txt .desc {
+    width: 80%;
+  }
+  main section article.on .txt {
+    width: 100%;
+    height: 70%;
+  }
+  main section article.on .pic {
+    width: 100%;
+    height: 30%;
+  }
+  main nav {
+    bottom: 7vh;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
